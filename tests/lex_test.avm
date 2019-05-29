@@ -1,0 +1,32 @@
+;invalid cmds
+pushj
+inval 1
+
+;valid cmds with wrong operand number
+push
+push int8(32) int16(12)
+assert
+pop int8(32)
+print float(23)
+
+;invalid operands
+push int12(32)
+push int8(32a)
+push int8( 32)
+push int83
+push int32(22.4)
+
+;valid code
+push int8(8)
+push int16(16)       ;with comment
+push int32(32);with comment no space
+push float(1.1)
+push double(2.2)
+dump
+pop    ;again comment
+pop;again comment
+pop
+pop
+pop
+;end comment
+exit

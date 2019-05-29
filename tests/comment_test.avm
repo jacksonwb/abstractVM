@@ -1,0 +1,5 @@
+;this is a comment
+push int16(8) ;here is another comment
+push int16(10); no space there
+dump ;here is a third comment
+exit

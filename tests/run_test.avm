@@ -1,0 +1,51 @@
+;push int8(200)
+
+;push int8(-200)
+
+;push int8(100)
+;push int8(100)
+;add
+
+;good
+push int8(22)
+push float(12.5)
+mul
+dump
+pop
+
+;good
+push int8(12)
+push int8(10)
+mod
+dump
+pop
+
+;bad
+;push int8(10)
+;push float(0)
+;div
+
+;bad
+;push float(22)
+;push int8(0)
+;div
+
+;stack is empty
+;pop
+
+;asserts
+push int16(32)
+assert int16(32) ;pass
+;assert int16(12) ;fail
+;assert float(32) ;fail
+pop
+
+;two values on stack
+push int16(32)
+push float(2.4)
+add
+dump
+;now only one
+;add ;fail
+
+;exit
