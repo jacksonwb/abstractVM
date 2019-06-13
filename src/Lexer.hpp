@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Lexer.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbeall <jbeall@student.42.us.org>          +#+  +:+       +#+        */
+/*   By: jackson <jbeall@student.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 13:45:31 by jbeall            #+#    #+#             */
-/*   Updated: 2019/05/27 15:06:45 by jbeall           ###   ########.fr       */
+/*   Updated: 2019/06/12 20:58:06 by jackson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <vector>
 #include <stdexcept>
 #include <iostream>
+#include <algorithm>
 #include "utility.hpp"
 
 class Token {
